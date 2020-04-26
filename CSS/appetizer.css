@@ -1,0 +1,50 @@
+.navbar {
+    margin-top: 0px;
+    background: black;
+    width: 100%;
+}
+
+nav li {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: #51514E;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px;
+    font-size: 60px;
+    font-family: Trattatello, fantasy;
+}
+
+h1, table {
+   fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+table {
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background: #3A3A38;
+    color: white;
+}

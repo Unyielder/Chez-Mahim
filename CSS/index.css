@@ -1,5 +1,4 @@
 .navbar {
-    margin-top: 0px;
     background: black;
     width: 100%
 }
@@ -13,23 +12,46 @@ nav li:hover {
     background: #51514E;
 }
 
-.col-md-4 img {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-    height: 400px;
-    width: 400px;
-    border-radius: 20px;
-}
-
 h1 {
-    font-size: 100px;
+    font-size: 150px;
     margin-top: 80px;
     text-align: center;
     font-family: Trattatello, fantasy;
 }
 
-#img1, #title {
+.col-md-4 img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 270px;
+    width: 270px;
+}
+
+.label {
+    text-align: center;
+    font-family: Trattatello, fantasy;
+    position: relative;
+    right: 38px;
+    text-decoraton: none;
+    color: black;
+}
+
+img:hover{
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+}
+
+#message_header {
+    opacity: 0;
+   animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#img1, #title, #appetizer {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
   -moz-animation: fadeIn ease 2s;
@@ -37,7 +59,7 @@ h1 {
   -ms-animation: fadeIn ease 2s;
 }
 
-#img2 {
+#img2, #main {
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
   -moz-animation: fadeIn ease 3s;
@@ -45,13 +67,14 @@ h1 {
   -ms-animation: fadeIn ease 3s;
 }
 
-#img3 {
+#img3, #dessert {
   animation: fadeIn ease 3.5s;
   -webkit-animation: fadeIn ease 3.5s;
   -moz-animation: fadeIn ease 3.5s;
   -o-animation: fadeIn ease 3.5s;
   -ms-animation: fadeIn ease 3.5s;
 }
+
 @keyframes fadeIn {
   0% {
     opacity:0;
@@ -64,5 +87,4 @@ h1 {
 footer {
     background-color: #3A3A38;
     color: white;
-    list-style-type: none;
 }
