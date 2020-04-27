@@ -9,22 +9,47 @@
 <body>
     <nav class="navbar navbar-expand-md fixed-top">
         <ul class="navbar-nav">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Contact</li>
-            <li class="nav-item">Blog</li>
+            <li id="home" class="nav-item"><a href="index.html">Home</a></li>
+            <li id="contact" class="nav-item">Contact</li>
+            <li id="blog" class="nav-item">Blog</li>
             <li class="nav-item">Mahim Temacini</li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container mx-auto">
             <h1 id="title">Chez Mahim</h1>
             <h2 id="message_header">Treat your taste buds right..</h2>
 
-            <div class="row center-block">
+            <div class="row mx-auto">
                 <div class="col-md-4 mx-auto"><a id="link_app" href="appetizer.html"><img id="img1" src="../images/appetizer.jpg"><p class="label" id="appetizer">Appetizer</p></a></div>
                 <div class="col-md-4 mx-auto"><a id="link_main" href="main.html"><img id="img2" src="../images/main.jpg"><p class="label" id="main">Entree</p></a></div>
                 <div class="col-md-4 mx-auto"><a id="link_des" href="dessert.html"><img id="img3" src="../images/dessert.jpg"><p class="label" id="dessert">Dessert</p></a></div>
             </div>
     </div>
+    <h2 id="reservations"><b>Reservations:</b></h2>
+    <div class="col-md-6 mx-auto">
+        <form>
+            <div class="form-group">
+                <label>Name: </label>
+                <input class="form-control" type="text" placeholder="First name" required>
+                <input class="form-control" type="text" placeholder="Last name" required>
+            </div>
+            <div class="form-group">
+                <label>Email: </label>
+                <input class="form-control" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Phone number: </label>
+                <input class="form-control" type="tel" placeholder="1-(555)-555-5555" required>
+            </div>
+            <div class="form-group" >
+                <label>Month: </label><input class="date" type="number" required>
+                <label>Day: </label><input class="date" type="number" required>
+                <label>Year: </label><input class="date" type="number" required>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Book Now">
+        </form>
+    </div>
+
     <footer class="footer-copyright text-center py-3">© 2020 Copyright: Chez Mahim</footer>
 
 

@@ -10,7 +10,9 @@ nav li {
     text-decoration: none;
 }
 
-nav li:hover {
+#home:hover,
+#contact:hover,
+#blog:hover {
     background: #51514E;
 }
 
