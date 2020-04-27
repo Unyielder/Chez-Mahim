@@ -116,6 +116,12 @@ form {
     background: #3A3A38;
 }
 
+.space {
+    width: 500px;
+    height: 500px;
+    margin:100px;
+}
+
 footer {
     background-color: #3A3A38;
     color: white;
