@@ -1,32 +1,69 @@
-.navbar {
-    background: black;
-    width: 100%
+* {
+    margin: 0;
+    padding: 0;
 }
 
-nav li {
-    padding: 10px;
+body {
+    background-color: #fcfaf7;
+    overflow-y: none;
+    overflow-x: none;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding: 20px;
     color: white;
     text-decoration: none;
 }
 
-#home:hover,
-#contact:hover,
-#blog:hover{
-    background: #51514E;
+.navbar a {
+    color: white;
+    text-decoration:none;
 }
 
-h1 {
+.home:hover {
+    background: #51514E;
+}
+.name {
+    text-decoration: none;
+}
+
+.title {
     font-size: 150px;
-    margin-top: 80px;
+    margin-bottom: 50px;
     text-align: center;
     font-family: Trattatello, fantasy;
     width: 100%;
 }
 
-.col-md-4 img {
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.meal-container {
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.meal img {
     height: 270px;
     width: 270px;
 }
@@ -35,9 +72,11 @@ h1 {
     text-align: center;
     font-family: Trattatello, fantasy;
     position: relative;
-    right: 38px;
     text-decoration: none;
     color: black;
+}
+.meal a {
+    text-decoration: none;
 }
 
 img:hover{
@@ -49,8 +88,7 @@ img:hover > .label {
 }
 
 
-
-#message_header {
+.slogan {
     opacity: 0;
    animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
@@ -59,9 +97,10 @@ img:hover > .label {
   -ms-animation: fadeIn ease 2s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
+  margin-bottom: 25px;
 }
 
-#img1, #title, #appetizer {
+#img1, .title, .appetizer, .reservations {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
   -moz-animation: fadeIn ease 2s;
@@ -69,7 +108,7 @@ img:hover > .label {
   -ms-animation: fadeIn ease 2s;
 }
 
-#img2, #main {
+#img2, .main {
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
   -moz-animation: fadeIn ease 3s;
@@ -77,7 +116,7 @@ img:hover > .label {
   -ms-animation: fadeIn ease 3s;
 }
 
-#img3, #dessert {
+#img3, .dessert {
   animation: fadeIn ease 3.5s;
   -webkit-animation: fadeIn ease 3.5s;
   -moz-animation: fadeIn ease 3.5s;
@@ -94,26 +133,44 @@ img:hover > .label {
   }
 }
 
-#reservations {
-    margin-top: 60px;
+.reservations-title {
+    margin-bottom: 2s0px;
     text-align: center;
-    font-family: font-family: Trattatello, fantasy;
+    font-family: Trattatello, fantasy;
+    font-size: 30px;
 }
 
 .date {
     width: 100px;
 }
 
-form {
+.reservations-form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 .btn {
     background: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    height: 40px;
 }
 
 .btn:hover {
     background: #3A3A38;
+    cursor: pointer;
 }
 
 .space {
@@ -125,4 +182,6 @@ form {
 footer {
     background-color: #3A3A38;
     color: white;
+    text-align: center;
+    padding:20px;
 }
