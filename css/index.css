@@ -168,6 +168,11 @@ input {
     height: 40px;
 }
 
+.date {
+    height: 17px;
+    width: 70px;
+}
+
 .btn:hover {
     background: #3A3A38;
     cursor: pointer;
